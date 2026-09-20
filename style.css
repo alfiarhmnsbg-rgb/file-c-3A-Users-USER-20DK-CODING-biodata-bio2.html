@@ -1,0 +1,225 @@
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+}
+
+/* Navbar */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+    background-color: #009df8;
+    color: white;
+}
+
+nav h2 {
+    font-size: 24px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #dbeafe;
+}
+
+/* Home */
+.home {
+    min-height: 90vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 50px 10%;
+    gap: 50px;
+
+    background: linear-gradient(135deg, #e3f2fd, #ffffff);
+}
+
+.home-text {
+    max-width: 550px;
+}
+
+.home-text h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.home-text h1 span {
+    color: #1e88e5;
+}
+
+.home-text p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* Foto */
+.foto img {
+    width: 280px;
+    height: 280px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 8px solid #000000;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Button */
+button {
+    padding: 13px 25px;
+
+    border: none;
+    border-radius: 25px;
+
+    background-color: #1e88e5;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #1565c0;
+    transform: scale(1.05);
+}
+
+/* Pesan */
+#pesan {
+    color: #1e88e5;
+    font-weight: bold;
+}
+
+/* Section */
+.section {
+    padding: 80px 10%;
+    min-height: 400px;
+}
+
+.section h1 {
+    text-align: center;
+    color: #1e88e5;
+    margin-bottom: 40px;
+}
+
+/* Biodata */
+.biodata {
+    max-width: 700px;
+    margin: auto;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.biodata p {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.biodata p:last-child {
+    border-bottom: none;
+}
+
+.biodata strong {
+    display: inline-block;
+    width: 220px;
+}
+
+/* Tentang */
+#tentang {
+    background-color: white;
+}
+
+.deskripsi {
+    max-width: 800px;
+    margin: auto;
+
+    text-align: center;
+
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+
+    padding: 25px;
+
+    background-color: #1e88e5;
+
+    color: white;
+}
+
+/* Responsive untuk HP */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .home-text h1 {
+        font-size: 32px;
+    }
+
+    .foto img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .biodata strong {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
